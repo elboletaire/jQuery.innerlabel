@@ -13,8 +13,20 @@
  * Options you can set:
  * 
  * jQuery('#form label').innerlabel({
- * 		defaultClass:	"inner-label", // Default class to be applied to labels
-
+ * 		label_class: "inner-label", // class set to label (used in css)
+ *		wrapper: false, // are the label and input wrapped by a div? specify the tag here (div, li, dd...)
+ *		wrapper_class: "inner-label-wrapper", // the class applied to the wrapper
+ *		active_class: "active", // class applied to the wrapper on input focus
+ *		possible_wrappers: [
+ *			'div',
+ *			'li',
+ *			'dd'
+ *		],
+ *		possible_inputs: [
+ *			'input',
+ *			'textarea'
+ *		],
+ *		placeholder: true // enables placeholder if available
  * });
  * 
  */
