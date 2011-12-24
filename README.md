@@ -47,9 +47,10 @@ You can style each inner-label using CSS:
 
 Works with jQuery versions 1.6 to 1.7.1. In previous versions works but buggy (maybe 'bind' or 'trigger' issues).
 
-Must work under every browser. 
+Must work under (almost) every browser. 
 
 Tested under (Win, Linux & Mac)... 
+
 * IE 6 to 9 
 * FF 7 & 8 
 * Opera 11.6
