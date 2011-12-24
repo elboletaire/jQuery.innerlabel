@@ -26,8 +26,8 @@
  * 
  * Options you can set:
  * 
- * jQuery('#form label').innerlabel({
- * 		label_class: "inner-label", // class set to label (used in css)
+ *	jQuery('#form label').innerlabel({
+ *		label_class: "inner-label", // class set to label (used in css)
  *		wrapper: false, // are the label and input wrapped by a div? specify the tag here (div, li, dd...)
  *		wrapper_class: "inner-label-wrapper", // the class applied to the wrapper
  *		active_class: "active", // class applied to the wrapper on input focus
@@ -41,7 +41,7 @@
  *			'textarea'
  *		],
  *		placeholder: true // enables placeholder if available
- * });
+ *	});
  * 
  */
 (function($){

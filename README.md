@@ -36,12 +36,7 @@ jQuery(function($){
 ```
 
 ## Notes
-Also remember to add the css to your site.
-
-You can style each inner-label using CSS:
-	#my-container .user-form .inner-label {
-		color: red;
-	}
+Remember to add the css to your site and modify it to your needs.
 
 ## Compatibility
 
