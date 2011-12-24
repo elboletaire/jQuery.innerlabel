@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery.innerLabel</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.innerlabel.js"></script>
+		<link rel="stylesheet" href="http://developer.yahoo.com/yui/build/reset/reset.css" />
+		<link rel="stylesheet" href="innerlabel.css" />
+		<style type="text/css">
+			label {
+				display: block;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="index.html">
+			<div>
+				<label for="input1">With wrapper</label>
+				<input id="input1" type="text" />
+			</div>
+			<label for="input2">Without wrapper</label>
+			<input type="text" id="input2" />
+			<label for="input3">With input wrapped</label>
+			<div>
+				<input id="input3" type="text" />
+			</div>
+			<div>
+				<label for="input4">With wrapper and input wrapped</label>
+				<div>
+					<input id="input4" type="text" />
+				</div>
+			</div>
+			<br />
+			The next labela are with placeholder set to false (html4 mode)
+			<div class="no-placeholder">
+				<div>
+					<label for="input5">With wrapper</label>
+					<input id="input5" type="text" />
+				</div>
+				<label for="input6">Without wrapper</label>
+				<input type="text" id="input6" />
+				<label for="input7">With input wrapped</label>
+				<div>
+					<input id="input7" type="text" />
+				</div>
+				<div>
+					<label for="input8">With wrapper and input wrapped</label>
+					<div>
+						<input id="input8" type="text" />
+					</div>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			jQuery(function($){
+				$('.no-placeholder label').innerlabel({placeholder: false});
+				$('label').innerlabel();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+/* basic inner label style */
+label.inner-label {
+	/* basic label configuration (required) */
+	position: absolute;
+	cursor: text;
+	z-index: 9000; /* (IE issues) */
+/* 	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none; */
+	/* end basic label configuration */
+
+	font-weight: normal;
+	left: 5px;
+	color: lightgray;
+}
+
+::-webkit-input-placeholder {
+	padding-left: 5px;
+}
+
+:-moz-placeholder {
+	padding-left: 5px;
+}
