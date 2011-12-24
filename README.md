@@ -56,3 +56,8 @@ Tested under (Win, Linux & Mac)...
 * Opera 11.6
 * Safari (5.1 under Mac and 5.1.2 under Win)
 * Chrome 16
+
+## License
+jQuery.innerlabel is distributed under a GNU/GPL license
+
+http://www.gnu.org/copyleft/gpl.html
