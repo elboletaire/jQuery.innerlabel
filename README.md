@@ -1,7 +1,34 @@
 #About
 **jQuery Inner Label** is a plug-in that lets you easily convert your labels into crossbrowser html5 placeholders (it uses html4 + css when html5 placeholder is not possible).
 
+## Usage
+jQuery Inner Label will convert your labels into inner-label. If your browser supports input attribute `placeholder` it will be used instead.
+
+```
+<label for="input">An inner-label</label>
+<input id="input" type="text" />
+
+<script>
+jQuery(function($) {
+	$('label').innerlabel();
+});
+</script>
+```
+
+Set `placeholder` option to false to check how it looks on old browsers and style it to your needs.
+
+```
+<script>
+jQuery(function($) {
+	$('label').innerlabel({placeholder: false});
+});
+</script>
+```
+
+Remember to set it to true (or remove it to use default value) after styling your inner-labels.
+
 ## Syntax
+
 ```
 jQuery(function($){
 	// Default options
@@ -13,7 +40,9 @@ jQuery(function($){
 	});
 });
 ```
+
 ## Default options
+
 ```
 jQuery(function($){
 	$('label').innerlabel({
@@ -39,7 +68,6 @@ jQuery(function($){
 Remember to add the css to your site and modify it to your needs.
 
 ## Compatibility
-
 Works with jQuery versions 1.6 to 1.7.1. In previous versions works but buggy (maybe 'bind' or 'trigger' issues).
 
 Must work under (almost) every browser. 
@@ -53,6 +81,6 @@ Tested under (Win, Linux & Mac)...
 * Chrome 16
 
 ## License
-jQuery.innerlabel is distributed under a GNU/GPL license
+jQuery.innerlabel is distributed under the GNU/GPL license
 
 http://www.gnu.org/copyleft/gpl.html

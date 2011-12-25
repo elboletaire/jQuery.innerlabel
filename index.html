@@ -6,7 +6,7 @@
 		<script type="text/javascript" src="jquery.innerlabel.js"></script>
 		<link rel="stylesheet" href="http://developer.yahoo.com/yui/build/reset/reset.css" />
 		<link rel="stylesheet" href="innerlabel.css" />
-		<style type="text/css">
+		<style>
 			label {
 				display: block;
 				font-weight: bold;
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<br />
-			If your browser does not support placeholders labels will be innerl-labelled. The next inputs have option `placeholder` set to false to show you
+			If your browser does not support placeholders labels will be innerl-labelled. The next inputs have `placeholder` option set to false to show you
 			how it looks in old browsers:
 			<div class="no-placeholder">
 				<div>
@@ -54,8 +54,10 @@
 				</div>
 			</div>
 		</form>
-		<script type="text/javascript">
+		<script>
 			jQuery(function($){
+				// Use placeholder set to false to style the placeholders crossbrowserly.
+				// Remember to remove the placeholder option to use placeholders when available (and to style placeholders too)
 				$('.no-placeholder label').innerlabel({placeholder: false});
 				$('label').innerlabel();
 			});
