@@ -4,11 +4,6 @@ label.inner-label {
 	position: absolute;
 	cursor: text;
 	z-index: 9000; /* (IE issues) */
-/* 	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none; */
 	/* end basic label configuration */
 
 	font-weight: normal;
@@ -17,9 +12,9 @@ label.inner-label {
 }
 
 ::-webkit-input-placeholder {
-	padding-left: 5px;
+	/* style placeholders here */
 }
 
 :-moz-placeholder {
-	padding-left: 5px;
+	/* style placeholders here */
 }
