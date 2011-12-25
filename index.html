@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>jQuery.innerLabel</title>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery.innerlabel.js"></script>
 		<link rel="stylesheet" href="http://developer.yahoo.com/yui/build/reset/reset.css" />
 		<link rel="stylesheet" href="innerlabel.css" />
@@ -15,6 +15,7 @@
 	</head>
 	<body>
 		<form action="index.html">
+			If your browser suppors placeholders and `placeholder` option is set to true (by default) labels will be converted to placeholders:
 			<div>
 				<label for="input1">With wrapper</label>
 				<input id="input1" type="text" />
@@ -32,7 +33,8 @@
 				</div>
 			</div>
 			<br />
-			The next labela are with placeholder set to false (html4 mode)
+			If your browser does not support placeholders labels will be innerl-labelled. The next inputs have option `placeholder` set to false to show you
+			how it looks in old browsers:
 			<div class="no-placeholder">
 				<div>
 					<label for="input5">With wrapper</label>
