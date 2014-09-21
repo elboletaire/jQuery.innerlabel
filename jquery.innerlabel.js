@@ -94,7 +94,7 @@
 						}
 						label.add(to_add).wrapAll(wrapper);
 					}
-					return wrapper.addClass(opts.wrapper_class).css( { position: "relative" , overflow: "hidden"  } );
+					return wrapper.addClass(opts.wrapper_class).css( { position: "relative" } );
 				},
 				// Get input field
 				getInput: function() {
